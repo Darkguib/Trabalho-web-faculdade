@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastre-se</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="website icon" type="png" href="imagens/logomini.png">
+</head>
+<body>
+	<div id="principal">
+		<div id="header"><img src="imagens/logo.png">
+			<div id="nav">
+				<a href="index.php">HOME</a>
+			</div>
+		</div>
+		<div id="cadastro">
+			<h2>Cadastre-se</h2>
+		</div>
+		<div id="campo-cadastro">
+			<form name="cadastra" method="post" class="textoconta" action="cadastro.php">
+				Nome:<br>
+				<input type="text" name="nome" required><br>
+				
+				Gênero: <br>
+				<input type="radio" name="sexo" value="M" required>Masculino
+				<input type="radio" name="sexo" value="F">Feminino
+				<input type="radio" name="sexo" value="N">Prefiro não informar<br>
+				
+				Data de nascimento:<br>
+				<input type="date" name="nascimento"><br>
+				
+				Numero de telefone:<br>
+				<input type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" pattern="\(d{2}) \d{5}-\d{4}$" / required><br>
+				
+				Endereço de e-mail:<br>
+				<input type="email" name="email" 
+				placeholder="seuemail@email.com" required><br>
+		
+				Senha:<br>
+				<input type="password" name="senha"
+				placeholder="senha" required><br>
+				Confirmar Senha:<br>
+				<input type="password" name="senhaconfirma" placeholder= "confirmar senha" required><br>
+				Deseja receber promoções e novidades por e-mail?<br>
+				<input type="radio" name="Newsletter" value="sim"> Sim <input type="radio" name="Newsletter" 
+				value="nao"> Não<br>
+				<br>
+
+				<input type="submit" name="cadastrar" value="Cadastrar">
+			</form>
+			<p class="textoconta">Já tem conta?<a href="login.php">logar</a></p><br>
+		</div>
+	</div>	
+
+	
+
+</body>
+</html>
